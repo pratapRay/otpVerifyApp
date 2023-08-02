@@ -10,7 +10,7 @@ const port = 8080;
 // Middlewares
 app.use(express.json());
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://fantastic-pasca-5fd1b6.netlify.app',
 }));
 app.use(morgan('tiny'));
 app.disable('x-powered-by'); // Reduce information leakage
