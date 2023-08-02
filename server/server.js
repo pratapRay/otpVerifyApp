@@ -9,7 +9,9 @@ const port = 8080;
 
 // Middlewares
 app.use(express.json());
-app.use(cors({ origin: 'https://otpverification-k1d6.onrender.com' }));
+app.use(cors({
+  origin: 'http://localhost:3000',
+}));
 app.use(morgan('tiny'));
 app.disable('x-powered-by'); // Reduce information leakage
 
